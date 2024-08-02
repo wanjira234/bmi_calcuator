@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI RESULT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Your BMI result</h1><br>
+        <p>Your BMI result is
+            <span class="result">
+            {{ bmi }}
+            </span>.
+            You are considered
+            <span class="status">
+                {{ health_status }}
+            </span>.
+        </p>
+    </div>
+
+
+</body>
+</html>
